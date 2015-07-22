@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_top_dummy_navigation">#F2F2F2</color>
+    <color name="grey_border_numeric_qty">#c4c4c4</color>
+    <color name="grey_line_seperator">#bfbfbf</color>
+    <color name="grey_card_details_border">#cccccc</color>
+    <color name="grey_card_details_fill">#f2f2f2</color>
+    <color name="orange_pay_button_color">#efb961</color>
+    <color name="black_payment_screen_text">#454545</color>
+    <color name="black_payment_screen_text_30_transp">#4d454545</color>
+    <color name="black_payment_screen_text_80_transp">#cd454545</color>
+    <color name="black_payment_screen_text_50_transp">#77454545</color>
+    <color name="grey_payment_screen_text">#999999</color>
+    <color name="orange_button_text">#efb961</color>
+    <color name="white_transp_50">#77ffffff</color>
+</resources>

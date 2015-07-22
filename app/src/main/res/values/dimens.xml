@@ -1,0 +1,66 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- General dimension used through out the app -->
+    <dimen name="text_bigger">16sp</dimen>
+    <dimen name="text_big">15sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_normal">13sp</dimen>
+    <dimen name="text_very_large">18sp</dimen>
+
+    <dimen name="padding_for_border_visibility">1dp</dimen>
+    <dimen name="right_left_padding">15dp</dimen>
+    <dimen name="line_seperator">1dp</dimen>
+
+    <!--Navigation Bar and Title Bar-->
+    <dimen name="nav_bar_text_size">9sp</dimen>
+
+    <dimen name="title_bar_height">50dp</dimen>
+    <dimen name="padding_for_logo_in_titlebar">5dp</dimen>
+    <dimen name="padding_bottom_for_profile_text">15dp</dimen>
+    <dimen name="bottom_nav_bar_height">60dp</dimen>
+    <dimen name="shop_more_icon_width_navbar">25dp</dimen>
+    <dimen name="padding_bottom_side_nav_buttons">5dp</dimen>
+    <dimen name="margin_right_left_nav_buttons_from_edge">50dp</dimen>
+    <dimen name="spacing_between_more_icon_text">8dp</dimen>
+    <dimen name="cart_button_width_nav_bar">72dp</dimen>
+    <dimen name="padding_bottom_center_nav_button">4dp</dimen>
+
+    <!-- Profile page specific dimensions -->
+    <dimen name="margin_left_edit_text_profile_page">112dp</dimen>
+    <dimen name="width_row_profile_page">44dp</dimen>
+
+    <!-- Payment page specific dimenstions -->
+    <dimen name="page_selected_indicator_margins">45dp</dimen>
+    <dimen name="margin_top_bottom_paypal_visa_button_layout">10dp</dimen>
+    <dimen name="margin_for_buttons_paypal_and_visa_from_borders">5dp</dimen>
+    <dimen name="button_width_paypal_visa">140dp</dimen>
+    <dimen name="card_details_field_description_width">85dp</dimen>
+    <dimen name="padding_top_shipping_add_layout">10dp</dimen>
+    <dimen name="edit_add_height_width">16dp</dimen>
+
+
+    <!--Shopping Page-->
+    <dimen name="billing_layout_bottom_padding">10dp</dimen>
+    <dimen name="billing_layout_top_padding">10dp</dimen>
+    <dimen name="margin_between_lines_billing_layout">6dp</dimen>
+    <dimen name="double_margin_between_lines_billing_layout">12dp</dimen>
+    <dimen name="height_of_listed_item_in_shop">80dp</dimen>
+    <dimen name="spacing_between_img_desc_shopping_list">5dp</dimen>
+    <dimen name="top_margin_shopping_list">15dp</dimen>
+    <dimen name="spacing_between_desc_price_shopping_list">10dp</dimen>
+    <dimen name="spacing_between_ex_cur_price_shopping_list">8dp</dimen>
+    <dimen name="margin_top_qty_text_shopping_list_item">13dp</dimen>
+    <dimen name="qty_textview_width_shopping_list_item">30dp</dimen>
+    <dimen name="qty_textview_height_shopping_list_item">30dp</dimen>
+    <dimen name="width_height_increment_decrement_buttons_shopping_list">30dp</dimen>
+    <dimen name="spacing_between_inc_dec_buttons_textview">5dp</dimen>
+    <dimen name="padding_right_shopping_list_item">10dp</dimen>
+
+    <!--Splash Screen-->
+    <dimen name="margin_from_bottom_for_text_input">115dp</dimen>
+    <dimen name="login_button_height">50dp</dimen>
+
+</resources>

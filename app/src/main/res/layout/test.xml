@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/width_height_increment_decrement_buttons_shopping_list"
+            android:layout_height="@dimen/width_height_increment_decrement_buttons_shopping_list"
+            android:id="@+id/minus_symbol"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/spacing_between_inc_dec_buttons_textview"
+            android:src="@mipmap/btn_decrease"/>
+        <TextView
+            android:layout_width="@dimen/qty_textview_width_shopping_list_item"
+            android:layout_height="@dimen/qty_textview_height_shopping_list_item"
+            android:text="1"
+            android:gravity="center"
+            android:layout_toRightOf="@id/minus_symbol"
+            android:layout_alignTop="@id/minus_symbol"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/border_numeric_qty"
+            android:layout_marginRight="@dimen/spacing_between_inc_dec_buttons_textview"
+            android:id="@+id/numeric_qty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/minus_symbol"
+            android:layout_alignLeft="@id/numeric_qty"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/quantity_tag"
+            android:text="Qty"/>
+
+        <ImageView
+            android:layout_width="@dimen/width_height_increment_decrement_buttons_shopping_list"
+            android:layout_height="@dimen/width_height_increment_decrement_buttons_shopping_list"
+            android:layout_toRightOf="@id/numeric_qty"
+            android:layout_alignTop="@id/minus_symbol"
+            android:layout_toEndOf="@id/numeric_qty"
+            android:id="@+id/plus_symbol"
+            android:src="@mipmap/btn_increase"/>
+    </RelativeLayout>
+</LinearLayout>

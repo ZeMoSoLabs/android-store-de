@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_screen"
+    tools:context=".SplashActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:text="CONTINUE"
+        android:textColor="@color/orange_button_text"
+        android:textSize="@dimen/text_very_large"
+        android:id="@+id/log_in_button"
+        android:background="@drawable/white_background_button"
+        android:layout_alignParentBottom="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/right_left_padding"
+        android:layout_marginLeft="@dimen/right_left_padding"
+        android:layout_marginBottom="@dimen/margin_from_bottom_for_text_input"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/MyEditTextTheme"
+        android:hint="Registered Email Id"
+        android:textColorHint="@color/white_transp_50"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_very_large"
+        android:id="@+id/email_id"/>
+
+
+</RelativeLayout>
