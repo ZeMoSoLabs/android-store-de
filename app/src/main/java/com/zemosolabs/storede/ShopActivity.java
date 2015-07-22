@@ -83,6 +83,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
             case R.id.center_cart_button_imgvw:
                 if(screen != CART) {
                     Log.i(TAG, "Cart clicked");
+                    ZeTarget.logPurchaseAttempted();
                     LinearLayout screen2 = (LinearLayout) findViewById(R.id.screen2);
                     findViewById(R.id.cart_icn_clickable_layout).setVisibility(View.GONE);
                     findViewById(R.id.navigation_holder).setVisibility(View.GONE);

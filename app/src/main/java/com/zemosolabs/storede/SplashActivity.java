@@ -34,8 +34,8 @@ public class SplashActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ZeTarget.initializeWithContextAndKey(getApplicationContext(), ZETARGET_API_KEY, GCM_SENDER_ID);
         setContentView(R.layout.activity_splash);
-        ZeTarget.initializeWithContextAndKey(getApplicationContext(),ZETARGET_API_KEY,GCM_SENDER_ID);
         SharedPreferences demoData = getSharedPreferences("DemoData",MODE_PRIVATE);
         Button logInButton = (Button) findViewById(R.id.log_in_button);
         logInButton.setOnClickListener(this);
