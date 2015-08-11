@@ -83,6 +83,12 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
             case R.id.center_cart_button_imgvw:
                 if(screen != CART) {
                     Log.i(TAG, "Cart clicked");
+                    /**
+                     * logPurchaseAttempted() is a convenience method of ZeTarget class which logs the event to the
+                     * ZeTarget databases so that it can be accessed from your dashboard on www.ZeTarget.com.
+                     *
+                     * This method is optional and to be used for generating event data for analysis.
+                     */
                     ZeTarget.logPurchaseAttempted();
                     LinearLayout screen2 = (LinearLayout) findViewById(R.id.screen2);
                     findViewById(R.id.cart_icn_clickable_layout).setVisibility(View.GONE);
@@ -129,13 +135,6 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
             case R.id.shop_icn_clickable_layout:
                 if(screen!=SHOP_SCREEN){
                     Log.i(TAG,"shop clicked");
-                    /**
-                     * logPurchaseAttempted() is another convenience method in ZeTarget which can be used for logging
-                     * purchase attempted events such as add to cart event etc. to keep track of such events.
-                     *
-                     * This method is optional and to be used for generating event data for analysis.
-                     */
-                    ZeTarget.logPurchaseAttempted();
                     findViewById(R.id.screen1).setVisibility(View.VISIBLE);
                     findViewById(R.id.cart_icn_clickable_layout).setVisibility(View.VISIBLE);
                     findViewById(R.id.navigation_holder).setVisibility(View.VISIBLE);
@@ -155,7 +154,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
                 break;
             case R.id.dob_field:
                 datePicker.show();
-
+                break;
             default:
                 break;
         }

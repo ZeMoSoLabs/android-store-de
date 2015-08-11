@@ -29,7 +29,7 @@ import java.net.URL;
 
 public class SplashActivity extends Activity implements View.OnClickListener {
     static final String GCM_SENDER_ID ="914500168484";
-    static final String ZETARGET_API_KEY = "XYZXYZXYZXYZXYZXYZXYZ";
+    static final String ZETARGET_API_KEY = "ZemosoL";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
