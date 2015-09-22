@@ -30,10 +30,12 @@ import java.net.URL;
 public class SplashActivity extends Activity implements View.OnClickListener {
     static final String GCM_SENDER_ID ="914500168484";
     static final String ZETARGET_API_KEY = "ZemosoL";
+    private static final String MY_URL = "http://api.zetarget.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ZeTarget.setZeTargetURL(MY_URL);
         ZeTarget.initializeWithContextAndKey(getApplicationContext(), ZETARGET_API_KEY, GCM_SENDER_ID);
         setContentView(R.layout.activity_splash);
         SharedPreferences demoData = getSharedPreferences("DemoData",MODE_PRIVATE);
@@ -61,6 +63,7 @@ public class SplashActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.log_in_button:
+
                 Intent intent = new Intent(this,ShopActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
