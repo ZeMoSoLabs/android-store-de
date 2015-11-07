@@ -74,4 +74,9 @@ public class SplashActivity extends Activity implements View.OnClickListener {
         }
     }
 
+    @Override
+    protected void attachBaseContext(Context ctx) {
+        super.attachBaseContext(ZeTarget.attachBaseContext(this,ctx));
+    }
+
 }

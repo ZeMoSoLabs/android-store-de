@@ -55,10 +55,21 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
         ImageView centralButtonNavigationToCart = (ImageView)findViewById(R.id.center_cart_button_imgvw);
         RelativeLayout shopButton = (RelativeLayout)findViewById(R.id.shop_icn_clickable_layout);
         RelativeLayout moreButton = (RelativeLayout)findViewById(R.id.more_icn_clickable_layout);
+        TextView subTotalTextView = (TextView)findViewById(R.id.subtotal_text);
+        subTotalTextView.setText(R.string.subtotal);
+        TextView shippingTextView = (TextView)findViewById(R.id.shipping_text);
+        shippingTextView.setText(R.string.shipping);
+        TextView totalTextView = (TextView)findViewById(R.id.total_text);
+        totalTextView.setText(R.string.total);
+        TextView shopTextView = (TextView)findViewById(R.id.shop_text);
+        shopTextView.setText(R.string.shop);
+        TextView moreTextView = (TextView)findViewById(R.id.more_text);
+        moreTextView.setText(R.string.more);
         centralButtonNavigationToCart.setOnClickListener(this);
         shopButton.setOnClickListener(this);
         moreButton.setOnClickListener(this);
         screen = SHOP_SCREEN;
+        setTitle(R.string.app_name);
     }
 
     private void prepareScreen1() {
@@ -357,6 +368,9 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
         }
     }
 
-
+    @Override
+    protected void attachBaseContext(Context ctx) {
+        super.attachBaseContext(ZeTarget.attachBaseContext(this,ctx));
+    }
 }
 

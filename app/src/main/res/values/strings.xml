@@ -4,6 +4,11 @@
     <string name="title_activity_shop">ShopActivity</string>
     <string name="dialog_message">Back to Shopping!</string>
     <string name="dialog_title">Thanks for purchasing at Store.de! </string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="total">Total</string>
+    <string name="shop">Shop</string>
+    <string name="more">More</string>
     <string-array name="gender_options">
         <item>MALE</item>
         <item>FEMALE</item>
