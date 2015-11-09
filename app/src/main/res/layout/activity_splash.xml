@@ -7,7 +7,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="@dimen/login_button_height"
-        android:text="CONTINUE"
+        android:text="@string/continue_button_text"
         android:textColor="@color/orange_button_text"
         android:textSize="@dimen/text_very_large"
         android:id="@+id/log_in_button"
@@ -21,7 +21,7 @@
         android:layout_marginBottom="@dimen/margin_from_bottom_for_text_input"
         android:layout_alignParentBottom="true"
         android:theme="@style/MyEditTextTheme"
-        android:hint="Registered Email Id"
+        android:hint="@string/email_hint_text"
         android:textColorHint="@color/white_transp_50"
         android:inputType="textPersonName"
         android:imeOptions="actionDone"

@@ -17,7 +17,7 @@
             android:textSize="@dimen/text_small"
             android:layout_centerVertical="true"
             android:textColor="@color/black_payment_screen_text"
-            android:text="PAYMENT" />
+            android:text="@string/payment_text" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:text="ADDRESS"/>
+            android:text="@string/address_text"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_alignParentEnd="true"
             android:textColor="@color/black_payment_screen_text_30_transp"
             android:layout_centerVertical="true"
-            android:text="COMPLETE"/>
+            android:text="@string/complete_text"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_big"
             android:textColor="@color/black_payment_screen_text"
-            android:text="CARD DETAILS"
+            android:text="@string/card_details_text"
             android:layout_alignParentTop="true"
             android:id="@+id/card_details_text" />
         <TextView
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_small"
             android:textColor="@color/grey_payment_screen_text"
-            android:text="Enter your debit or credit card details."
+            android:text="@string/enter_credit_debit_details_text"
             android:layout_below="@id/card_details_text"
             android:id="@+id/card_details_text_2"/>
     </RelativeLayout>
@@ -143,7 +143,7 @@
                 android:background="@drawable/card_details_left_top"
                 android:textColor="@color/black_payment_screen_text_80_transp"
                 android:textSize="@dimen/text_normal"
-                android:text="Card No:"
+                android:text="@string/card_no_text"
                 android:gravity="start|center_vertical"
                 android:paddingLeft="@dimen/right_left_padding" />
             <TextView
@@ -154,7 +154,7 @@
                 android:textSize="@dimen/text_bigger"
                 android:gravity="start|center_vertical"
                 android:paddingLeft="@dimen/right_left_padding"
-                android:text="4561493973223821"/>
+                android:text="@string/card_no_value_text"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                 android:background="@drawable/card_details_center_left"
                 android:textColor="@color/black_payment_screen_text_80_transp"
                 android:textSize="@dimen/text_normal"
-                android:text="Expiry:"
+                android:text="@string/expirty_text"
                 android:gravity="start|center_vertical"
                 android:paddingLeft="@dimen/right_left_padding"/>
             <TextView
@@ -179,7 +179,7 @@
                 android:background="@drawable/card_details_center_right"
                 android:textColor="@color/black_payment_screen_text_80_transp"
                 android:textSize="@dimen/text_bigger"
-                android:text="12/15"
+                android:text="@string/expiry_value_text"
                 android:gravity="start|center_vertical"
                 android:paddingLeft="@dimen/right_left_padding"/>
         </LinearLayout>
@@ -197,7 +197,7 @@
                 android:textColor="@color/black_payment_screen_text_80_transp"
                 android:background="@drawable/card_details_bottom_left"
                 android:textSize="@dimen/text_normal"
-                android:text="CVC Code:"
+                android:text="@string/cvc_code_text"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/right_left_padding"/>
             <TextView
@@ -206,7 +206,7 @@
                 android:textColor="@color/black_payment_screen_text_80_transp"
                 android:textSize="@dimen/text_bigger"
                 android:background="@drawable/card_details_bottom_right"
-                android:text="123"
+                android:text="@string/cvc_value_text"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/right_left_padding"/>
         </LinearLayout>
@@ -225,13 +225,13 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/padding_top_shipping_add_layout"
             android:id="@+id/ship_to_line1"
-            android:text="SHIP TO"/>
+            android:text="@string/ship_to_text"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ship_to_line1"
             android:textColor="@color/grey_payment_screen_text"
-            android:text="SAN FRANCISCO, CALIFORNIA, USA\nWestfield San Francisco Centre\n845 Market Stree"/>
+            android:text="@string/ship_to_value_text"/>
         <ImageView
             android:layout_width="@dimen/edit_add_height_width"
             android:layout_height="@dimen/edit_add_height_width"
@@ -249,7 +249,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.12"
-        android:text="PAY NOW"
+        android:text="@string/pay_now_text"
         android:textColor="@color/white"
         android:id="@+id/pay_button"
         android:background="@color/orange_pay_button_color">

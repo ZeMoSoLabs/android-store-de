@@ -16,7 +16,7 @@
             android:textColor="@color/black_payment_screen_text_50_transp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="First Name"/>
+            android:text="@string/first_name_text"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:background="@color/white"
             android:textColor="@color/black_payment_screen_text"
             android:id="@+id/fname_field"
-            android:hint="Your First Name"/>
+            android:hint="@string/first_name_hint_text"/>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
             android:textColor="@color/black_payment_screen_text_50_transp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="Last Name"/>
+            android:text="@string/last_name_text"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             android:background="@color/white"
             android:textColor="@color/black_payment_screen_text"
             android:id="@+id/lname_field"
-            android:hint="Your Last Name"/>
+            android:hint="@string/last_name_hint_text"/>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="@color/black_payment_screen_text_50_transp"
-            android:text="Gender"/>
+            android:text="@string/gender_text"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
             android:layout_marginStart="112dp"
             android:textColor="@color/black_payment_screen_text"
             android:id="@+id/gender_data"
-            android:text="MALE"/>
+            android:text="@string/male_text"/>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             android:textColor="@color/black_payment_screen_text_50_transp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="DOB"/>
+            android:text="@string/dob_text"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
             android:layout_marginStart="112dp"
             android:textColor="@color/black_payment_screen_text"
             android:id="@+id/dob_field"
-            android:text="26/08/1986"/>
+            android:text="@string/dob_value_text"/>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
