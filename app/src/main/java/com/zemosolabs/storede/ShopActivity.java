@@ -370,7 +370,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
 
     @Override
     protected void attachBaseContext(Context ctx) {
-        super.attachBaseContext(ZeTarget.attachBaseContext(this,ctx));
+        super.attachBaseContext(ZeTarget.attachBaseContext(ctx,this));
     }
 }
 
