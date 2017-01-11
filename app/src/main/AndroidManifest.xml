@@ -3,16 +3,16 @@
     package="com.zemosolabs.storede" >
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <permission
-        android:name="com.zemosolabs.storede.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-    <uses-permission
-        android:name="com.zemosolabs.storede.permission.C2D_MESSAGE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+    <!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+<!---->
+    <!--<permission-->
+        <!--android:name="com.zemosolabs.storede.permission.C2D_MESSAGE"-->
+        <!--android:protectionLevel="signature" />-->
+    <!--<uses-permission-->
+        <!--android:name="com.zemosolabs.storede.permission.C2D_MESSAGE" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
 
     <application
         android:allowBackup="true"
@@ -33,14 +33,14 @@
             android:label="@string/title_activity_shop"
             android:screenOrientation="portrait">
         </activity>
-        <receiver
-            android:name="com.zemosolabs.zetarget.sdk.GcmBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <category android:name="com.zemosolabs.demozetarget" />
-            </intent-filter>
-        </receiver>
+        <!--<receiver-->
+            <!--android:name="com.zemosolabs.zetarget.sdk.GcmBroadcastReceiver"-->
+            <!--android:permission="com.google.android.c2dm.permission.SEND" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+                <!--<category android:name="com.zemosolabs.demozetarget" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
     </application>
 
 </manifest>

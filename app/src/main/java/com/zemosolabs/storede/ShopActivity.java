@@ -23,8 +23,6 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.zemosolabs.zetarget.sdk.ZeTarget;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -100,7 +98,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
                      *
                      * This method is optional and to be used for generating event data for analysis.
                      */
-                    ZeTarget.logPurchaseAttempted();
+//                    ZeTarget.logPurchaseAttempted();
                     LinearLayout screen2 = (LinearLayout) findViewById(R.id.screen2);
                     findViewById(R.id.cart_icn_clickable_layout).setVisibility(View.GONE);
                     findViewById(R.id.navigation_holder).setVisibility(View.GONE);
@@ -135,7 +133,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
                  *
                  * This method is optional and to be used for generating event data for analysis.
                  */
-                ZeTarget.logPurchaseCompleted(cartTotal);
+//                ZeTarget.logPurchaseCompleted(cartTotal);
                 cartTotal = 0;
                 for(int i=0;i<items.size();i++){
                     ShoppingItem currentItem = items.get(i);
@@ -215,7 +213,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
          *
          * It is an optional method used for segmentation of users and targetting promotions more accurately.
          */
-        ZeTarget.setGender(genderValue);
+//        ZeTarget.setGender(genderValue);
         String dobPresentable = dobField.substring(6,8)+"/"+dobField.substring(4,6)+"/"+dobField.substring(0, 4);
         dob.setText(dobPresentable);
         /**
@@ -223,7 +221,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
          *
          * It is an optional method used for segmentation of users and targetting promotions more accurately.
          */
-        ZeTarget.setDOB(dobField);
+//        ZeTarget.setDOB(dobField);
         if(sharedPreferences.contains("fname")) {
             String firstNameValue = sharedPreferences.getString("fname", "null");
             fname.setText(firstNameValue);
@@ -232,7 +230,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
              *
              * It is an optional method used for segmentation of users and targetting promotions more accurately.
              */
-            ZeTarget.setFirstName(firstNameValue);
+//            ZeTarget.setFirstName(firstNameValue);
         }
         if(sharedPreferences.contains("lname")) {
             String lastNameValue = sharedPreferences.getString("lname", "null");
@@ -242,7 +240,7 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
              *
              * It is an optional method used for segmentation of users and targetting promotions more accurately.
              */
-            ZeTarget.setLastName(lastNameValue);
+//            ZeTarget.setLastName(lastNameValue);
         }
     }
 
@@ -368,9 +366,9 @@ public class ShopActivity extends Activity implements View.OnClickListener,TextV
         }
     }
 
-    @Override
-    protected void attachBaseContext(Context ctx) {
-        super.attachBaseContext(ZeTarget.attachBaseContext(ctx,this));
-    }
+//    @Override
+//    protected void attachBaseContext(Context ctx) {
+//        super.attachBaseContext(ZeTarget.attachBaseContext(ctx,this));
+//    }
 }
 

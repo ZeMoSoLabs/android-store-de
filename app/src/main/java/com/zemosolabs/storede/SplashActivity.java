@@ -1,30 +1,13 @@
 package com.zemosolabs.storede;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-import com.zemosolabs.zetarget.sdk.ZeTarget;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import com.zemosolabs.inapptextsdk.InAppText;
 
 
 public class SplashActivity extends Activity implements View.OnClickListener {
@@ -35,8 +18,9 @@ public class SplashActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ZeTarget.setZeTargetURL(MY_URL);
-        ZeTarget.initializeWithContextAndKey(getApplicationContext(), ZETARGET_API_KEY, GCM_SENDER_ID);
+//        ZeTarget.setZeTargetURL(MY_URL);
+//        ZeTarget.initializeWithContextAndKey(getApplicationContext(), ZETARGET_API_KEY, GCM_SENDER_ID);
+//        ZeTarget.disableDebugging();
         setContentView(R.layout.activity_splash);
         SharedPreferences demoData = getSharedPreferences("DemoData",MODE_PRIVATE);
         Button logInButton = (Button) findViewById(R.id.log_in_button);
@@ -60,6 +44,14 @@ public class SplashActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
+    protected void onResume() {
+        InAppText.enableDebugging();
+        InAppText.enableAudio();
+        InAppText.initializeInAppText(this);
+        super.onResume();
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.log_in_button:
@@ -74,9 +66,9 @@ public class SplashActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    @Override
-    protected void attachBaseContext(Context ctx) {
-        super.attachBaseContext(ZeTarget.attachBaseContext(ctx,this));
-    }
+//    @Override
+//    protected void attachBaseContext(Context ctx) {
+//        super.attachBaseContext(ZeTarget.attachBaseContext(ctx,this));
+//    }
 
 }
