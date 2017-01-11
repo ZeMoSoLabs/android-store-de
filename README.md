@@ -3,7 +3,7 @@ ZeTarget Store de android demo app
 
 # InAppText Android SDK
 ## Installation
-- Download InAppTextSDK.aar from <link>
+- Download InAppTextSDK.aar from [here](https://github.com/ZeMoSoLabs/android-store-de/blob/master/app/libs/InAppTextSDK.aar).
 - Copy and paste it into libs folder of the application
 - Add the following lines in the app level build.gradle file
 
@@ -22,10 +22,14 @@ ZeTarget Store de android demo app
     ````
     
 ## Initialization
-- Add the following lines in your LAUNCHER/Main Activity's `onResume()` method
+- Add the following lines in your LAUNCHER/Main Activity's `onResume()` method before calling `super.onResume()`
   
   ````
-  InAppText.enableDebugging();  // Remove this line (or all the three lines) to disable the SDK
-  InAppText.enableAudio();      // Call this method if you want audio while recording screen
-  InAppText.initializeInAppText(this); // Initializes the sdk
+  @Override
+  protected void onResume() {
+    InAppText.enableDebugging();  // Remove this line (or all the three lines) to disable the SDK
+    InAppText.enableAudio();      // Call this method if you want audio while recording screen
+    InAppText.initializeInAppText(this); // Initializes the sdk
+    super.onResume();
+  }
   ````
